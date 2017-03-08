@@ -474,13 +474,6 @@ packages:
         # - fb-persistent # bounds: persistent # via: fb
         # - mangopay # compilation failure against aeson
         - nonce
-        - serversession
-        # - serversession-backend-acid-state # via acid-state: via safecopy: bounds: vector
-        # - serversession-backend-persistent # bounds: persistent, persistent-postgresql, persistent-sqlite
-        # - serversession-backend-redis # bounds: hedis
-        # - serversession-frontend-snap # bounds: snap, snap-core
-        - serversession-frontend-wai
-        - serversession-frontend-yesod
         - thumbnail-plus
         # - yesod-auth-account-fork # bounds: persistent
         # - yesod-auth-fb # bounds: time, transformers # via fb, via yesod-fb
@@ -1585,6 +1578,13 @@ packages:
         - tasty-fail-fast
         - drifter
         - drifter-postgresql
+        - serversession
+        - serversession-backend-acid-state
+        - serversession-backend-persistent
+        - serversession-backend-redis
+        - serversession-frontend-snap
+        - serversession-frontend-wai
+        - serversession-frontend-yesod
 
     "Lars Kuhtz <lakuhtz@gmail.com> @larskuhtz":
         - wai-cors
